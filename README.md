@@ -14,10 +14,14 @@ pip install nbdev_hello_world
 
 ## How to use
 
-Fill me in please! Don’t forget code examples:
+This module is used for testing purpose of nbdev library. With this
+module you can print outputs and test it using assert and test_eq. Also
+you can print image in the output.
 
-``` python
-1+1
-```
+## example 1
 
-    2
+    'Hello Isaac!'
+
+## example 2
+
+![](index_files/figure-commonmark/cell-3-output-1.svg)

@@ -5,4 +5,5 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://Pankajkumar-Bankar.github.io',
                 'git_url': 'https://github.com/Pankajkumar-Bankar/nbdev-hello-world',
                 'lib_path': 'nbdev_hello_world'},
-  'syms': {'nbdev_hello_world.core': {'nbdev_hello_world.core.foo': ('core.html#foo', 'nbdev_hello_world/core.py')}}}
+  'syms': { 'nbdev_hello_world.Test1': {'nbdev_hello_world.Test1.say_hello': ('testing.html#say_hello', 'nbdev_hello_world/Test1.py')},
+            'nbdev_hello_world.core': {'nbdev_hello_world.core.foo': ('testing.html#foo', 'nbdev_hello_world/core.py')}}}
