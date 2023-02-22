@@ -70,13 +70,12 @@ class TestName(unittest.TestCase):
     FAIL: test_subtract (__main__.TestName)
     ----------------------------------------------------------------------
     Traceback (most recent call last):
-      File "C:\Users\5115\AppData\Local\Temp\ipykernel_17168\4123861692.py", line 7, in test_subtract
+      File "C:\Users\5115\AppData\Local\Temp\ipykernel_22516\4123861692.py", line 7, in test_subtract
         assert subtract(1,3)== 4
-    AssertionError: assert -2 == 4
-     +  where -2 = subtract(1, 3)
+    AssertionError
 
     ----------------------------------------------------------------------
-    Ran 4 tests in 0.012s
+    Ran 4 tests in 0.013s
 
     FAILED (failures=1)
 
@@ -105,7 +104,7 @@ def test_divide():
     E       assert -2 == 2
     E        +  where -2 = subtract(1, 3)
 
-    C:\Users\5115\AppData\Local\Temp\ipykernel_17168\2678314103.py:5: AssertionError
+    C:\Users\5115\AppData\Local\Temp\ipykernel_22516\2678314103.py:5: AssertionError
     ===================================== short test summary info =====================================
-    FAILED t_875e8f65962342d7b84f01ab1bc8a57a.py::test_subtract - assert -2 == 2
-    1 failed, 3 passed in 0.04s
+    FAILED t_dcfcb849b5634211b31c8d80c2082597.py::test_subtract - assert -2 == 2
+    1 failed, 3 passed in 0.53s
