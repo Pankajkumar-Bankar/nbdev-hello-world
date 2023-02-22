@@ -15,7 +15,7 @@ pip install nbdev_hello_world
 ## How to use
 
 This file contains all the testcases of Functions written in
-Testing.ipynb .
+testing.ipynb .
 
 ## TestCases
 
@@ -40,7 +40,7 @@ class TestName(unittest.TestCase):
     test_subtract (__main__.TestName) ... ok
 
     ----------------------------------------------------------------------
-    Ran 4 tests in 0.008s
+    Ran 4 tests in 0.010s
 
     OK
 
@@ -70,11 +70,42 @@ class TestName(unittest.TestCase):
     FAIL: test_subtract (__main__.TestName)
     ----------------------------------------------------------------------
     Traceback (most recent call last):
-      File "C:\Users\5115\AppData\Local\Temp\ipykernel_9664\4123861692.py", line 7, in test_subtract
+      File "C:\Users\5115\AppData\Local\Temp\ipykernel_17168\4123861692.py", line 7, in test_subtract
         assert subtract(1,3)== 4
-    AssertionError
+    AssertionError: assert -2 == 4
+     +  where -2 = subtract(1, 3)
 
     ----------------------------------------------------------------------
-    Ran 4 tests in 0.010s
+    Ran 4 tests in 0.012s
 
     FAILED (failures=1)
+
+### Testing using pytest
+
+``` python
+def test_add():
+    assert add(1,3) == 4
+    
+def test_subtract():
+    assert subtract(1,3) == 2
+    
+def test_multiply():
+    assert multiply(1,3) == 3
+    
+def test_divide():
+    assert divide(1,3) == 0.33
+```
+
+    .F..                                                                                         [100%]
+    ============================================ FAILURES =============================================
+    __________________________________________ test_subtract __________________________________________
+
+        def test_subtract():
+    >       assert subtract(1,3) == 2
+    E       assert -2 == 2
+    E        +  where -2 = subtract(1, 3)
+
+    C:\Users\5115\AppData\Local\Temp\ipykernel_17168\2678314103.py:5: AssertionError
+    ===================================== short test summary info =====================================
+    FAILED t_875e8f65962342d7b84f01ab1bc8a57a.py::test_subtract - assert -2 == 2
+    1 failed, 3 passed in 0.04s
