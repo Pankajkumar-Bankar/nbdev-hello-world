@@ -14,14 +14,67 @@ pip install nbdev_hello_world
 
 ## How to use
 
-This module is used for testing purpose of nbdev library. With this
-module you can print outputs and test it using assert and test_eq. Also
-you can print image in the output.
+This file contains all the testcases of Functions written in
+Testing.ipynb .
 
-## example 1
+## TestCases
 
-    'Hello Isaac!'
+``` python
+class TestName(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(1,3),4)
+        
+    def test_subtract(self):
+        self.assertEqual(subtract(1,3),-2)
+        
+    def test_multiply(self):
+        self.assertEqual(multiply(1,3),3)
+        
+    def test_divide(self):
+        self.assertEqual(divide(1,3),0.33)
+```
 
-## example 2
+    test_add (__main__.TestName) ... ok
+    test_divide (__main__.TestName) ... ok
+    test_multiply (__main__.TestName) ... ok
+    test_subtract (__main__.TestName) ... ok
 
-![](index_files/figure-commonmark/cell-3-output-1.svg)
+    ----------------------------------------------------------------------
+    Ran 4 tests in 0.008s
+
+    OK
+
+### Testing using Fastcore
+
+``` python
+class TestName(unittest.TestCase):
+    def test_add(self):
+        assert add(1,3)== 4
+        
+    def test_subtract(self):
+        assert subtract(1,3)== 4
+        
+    def test_multiply(self):
+        test_eq(multiply(1,3), 3)
+        
+    def test_divide(self):
+        test_eq(divide(1,3), 0.33)
+```
+
+    test_add (__main__.TestName) ... ok
+    test_divide (__main__.TestName) ... ok
+    test_multiply (__main__.TestName) ... ok
+    test_subtract (__main__.TestName) ... FAIL
+
+    ======================================================================
+    FAIL: test_subtract (__main__.TestName)
+    ----------------------------------------------------------------------
+    Traceback (most recent call last):
+      File "C:\Users\5115\AppData\Local\Temp\ipykernel_9664\4123861692.py", line 7, in test_subtract
+        assert subtract(1,3)== 4
+    AssertionError
+
+    ----------------------------------------------------------------------
+    Ran 4 tests in 0.010s
+
+    FAILED (failures=1)
