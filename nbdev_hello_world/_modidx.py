@@ -17,4 +17,5 @@ d = { 'settings': { 'branch': 'main',
                                            'nbdev_hello_world.Methods.multiply': ('testing.html#multiply', 'nbdev_hello_world/Methods.py'),
                                            'nbdev_hello_world.Methods.subtract': ('testing.html#subtract', 'nbdev_hello_world/Methods.py')},
             'nbdev_hello_world.Test1': {'nbdev_hello_world.Test1.say_hello': ('testing.html#say_hello', 'nbdev_hello_world/Test1.py')},
-            'nbdev_hello_world.core': {'nbdev_hello_world.core.foo': ('testing.html#foo', 'nbdev_hello_world/core.py')}}}
+            'nbdev_hello_world.core': {'nbdev_hello_world.core.foo': ('testing.html#foo', 'nbdev_hello_world/core.py')},
+            'nbdev_hello_world.nbdev-hello-world': {}}}
